@@ -1,0 +1,431 @@
+@import 'utility.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+header{
+    background-color: var(--dark);
+    height:100vh;
+    width: 100vw;
+    
+}
+.container{
+    max-width: 1152px;
+    padding: 0 20px;
+    margin: 0 auto;
+    
+}
+.container .branding img{
+    border-radius: 3%;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition:all .3s ease;
+    
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+
+header nav{
+   padding: 2rem 0; 
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.Me .left img{
+    border-radius: 50%;
+     
+}
+.Me .right{
+    color:var(--pure);
+    line-height: 3rem;
+}
+
+.Me .right h6{
+    font-size: 2rem;
+    color:var(--primary);
+    margin: 1rem;
+}
+.Me .right h1{
+    font-size:2rem;
+    font-weight:100 ;
+    margin: 2rem;
+}
+.Me .right h1 span{
+    color: var(--primary);
+    font-size: 2.5rem;
+}
+
+section{
+    padding: 6rem 0;
+    height:100vh;
+    width: 100vw;
+    background-color:var(--dark);
+}
+section.about svg:hover{
+    transition: all .5s ease;
+}
+
+section.about .about-me-image{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+section.about .container{
+    margin-top:100px ;
+}
+
+section.about h1{
+    margin-bottom:1 rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--pure);
+}
+section.about h1 span{
+    color:var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom:1rem;
+    font-weight: 100;
+    color: var(--pure);
+ }
+ section.about p{
+     color: dimgrey;
+     line-height: 1.8;
+     font-family: 'Lato', sans-serif;
+     font-size: large;
+     margin-bottom: 3rem;
+ }
+
+ section.about .social{
+    display: flex;
+
+ }
+
+ section.about .social a{
+     background-color: #898989;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     -webkit-webkit: border radius 50%;
+     -moz-webkit: border radius 50%;
+     -ms-webkit: border radius 50%;
+     -o-webkit: border radius 50%;
+     margin-right: 0.5rem;
+     transition: all 0.3s ease;
+     
+ }
+ section.about .social a img{
+     width: 100%;
+     height: 100%;
+     padding: 00.5rem;
+ }
+
+ section.about .social a:hover{
+     background-color: var(--primary);
+ }
+ section.freelancer{
+    text-align: center;
+    height:100vh;
+    width: 100vw;
+    color: #666666;
+    background-color: var(--dark);
+
+}
+section.freelancer h1{
+    font-size: 3rem;
+    color:var(--primary);
+    margin: 1rem;
+}
+section.freelancer p{
+    font-size: 2rem;
+    color:var(--pure);
+    margin: 2rem;
+}
+section.Education h1{
+    margin-top: -90px;
+    margin-bottom: -10px;
+    font-size: 3rem;
+    color: var(--primary);
+}
+/* section.Education {
+    text-align: center;
+    margin-top: -60px;
+}
+
+section.Education h1{
+    font-size: 3rem;
+    color: var(--pure);
+}
+section.Education .slider .slide-1 h3{
+    font-size: 2rem;
+    color: var(--primary);
+}
+section.Education h3 span{
+    color: var(--pure);
+}
+section.Education h1 span{
+    color: var(--primary);
+}
+section.Education .sleder .slide-1 img{
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+}
+*/
+section.Education .slider .slide span{
+    color: var(--pure);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+/* ---------------------------------------------- */
+section.Education .slider .slide h4{
+    color: var(--pure);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+/* ---------------------------------------------- */
+section.Education .slider .slide .location{
+    color: var(--primary);
+    font-size: 1.5rem;
+} 
+
+section.Education .slider .slide img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 2rem;
+
+}
+/* -------------------------------------------------- */
+section.Education .slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* ------------------------------------------------- */
+section.Education .slider .slide h3{
+    font-size: 2rem;
+    color: var(--primary);
+}
+section.Education .slider .slide h3 span{
+    color: var(--pure);
+}
+
+section.Education .slider-dots .dots{
+    list-style-type:none;
+    display:flex!important;
+    justify-content: center;
+}
+/* --------------------------------------------------- */
+section.Education .slider-dots{
+    margin-top: .5rem;
+}
+/* ----------------------------------------------------- */
+section.Education .slider-dots button{
+    font-size: 0;
+    width: 15px;
+    height:8px;
+    margin-right: 0.8rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+/* ------------------------------------------------------- */
+section.Education .dots li.slick-active button{
+    background: var(--primary);
+    width: 30px;
+}
+section.work h1{
+    margin-top: -5.5rem;
+    margin-bottom: -10px;
+    font-size: 3rem;
+    color: var(--primary);
+}
+section.work h1 span{
+    color: #FFFFFF;
+}
+
+
+section.Education .Certificate-slider-dots .slide span{
+    color: var(--pure);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+
+
+/* ------------------------------------------------------------- */
+section.work .Certificate-slider-dots .Certificate-dots{
+    list-style-type:none;
+    display:flex!important;
+    justify-content: center;
+}
+section.work .Certificate-slider-dots{
+    margin-top: .5rem;
+}
+section.work .Certificate-slider .slide img{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 1.9rem;
+    margin-bottom: 2rem;
+}
+section.work .Certificate-slider .slide h3{
+    color: var(--pure);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+/* ----------------------------------------------------------- */
+section.work .Certificate-slider .slide{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* ----------------------------------------------------------- */
+
+section.work .Certificate-slider-dots{
+    margin-top: 0.5rem;
+}
+
+/* ------------------------------------------------------------- */
+section.work .Certificate-slider-dots button{
+    font-size: 0;
+    width: 15px;
+    height:8px;
+    margin-right: 0.8rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+section.work .Certificate-dots li.slick-active button{
+    background: var(--primary);
+    width: 30px;
+    transition: 0.1 ease;
+}
+
+section.contact{
+    height: 100%;
+    width: 100%;
+}
+section.contact h1{
+   margin-top: -4rem;
+   text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--primary);
+}
+section.contact h1 span{
+    color: var(--pure);
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+section.contact .card-wrapper .card{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section.contact .card-wrapper .card img{
+    background: var(--pure);
+    border-radius: 50%;
+    padding: 00.5rem;
+    
+}
+
+section.contact .card-wrapper .card h2{
+    color: var(--primary);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+section.contact .card-wrapper .card .content a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--pure);
+}
+
+/* ------------------mobile navigation ------------ */
+/* @media (max-width:870px){
+    header #main-nav{
+        display: none;
+    }
+}
+
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamberger img{
+    width: 50px;
+    height: 50px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background:var(--light) ;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+
+} */
